@@ -10,7 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/vms');
+        const response = await axios.get('http://88.198.18.234:5000/api/vms');
         setData(response.data);
         setLoading(false);
       } catch (err) {
